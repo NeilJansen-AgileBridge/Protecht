@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="0194e17c-8344-400a-aabc-4b43ace80030" type="Service" typeId="b16578a5-27b1-4047-a8df-f0b783d706bd">
+  <name>CustomersService</name>
+  <display>CustomersService</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>79270802-974f-4a98-b6a5-5c990dc80048</parentFolderId>
+  <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+  <packageName>InsureIt.Services</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="c29224ec-d473-4b95-ad4a-ec55c676c4fd" name="Http Service Settings">
+      <addedByDefault>false</addedByDefault>
+      <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+      <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+      <properties>
+        <property name="1e223bd0-7a72-435a-8741-a612d88e4a12" display="Route" value="api/customers" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="b5104518-d467-4d56-aa36-fd6451512a3d" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>CreateCustomer</name>
+      <display>CreateCustomer(dto: CustomerCreateDto): guid</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="9e579641-1117-4790-88f0-fb7fd0b4ca8f">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>0194e17c-8344-400a-aabc-4b43ace80030</parentFolderId>
+      <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+      <packageName>InsureIt.Services</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="c2babc8a-7545-46ab-b007-4e6d5fbd4f9e" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>dto</name>
+          <display>in : dto: CustomerCreateDto</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="58cfdca5-58c0-4ce3-915f-c43e6ab0112b">
+            <typeId>3b92114e-0ba0-400d-a41f-1552d0af1cf2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>InsureIt.Services</typePackageName>
+            <typePackageId>79270802-974f-4a98-b6a5-5c990dc80048</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>b5104518-d467-4d56-aa36-fd6451512a3d</parentFolderId>
+          <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+          <packageName>InsureIt.Services</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="d6d2f5bf-738d-4f4a-813a-690bea5dea24" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>FindCustomerById</name>
+      <display>FindCustomerById(id: guid): CustomerDto</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="5eab4053-5873-4d6a-9eb2-70235ed0e3a4">
+        <typeId>7d698419-dd66-46bb-96ea-e1e6ec69a7e6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>InsureIt.Services</typePackageName>
+        <typePackageId>79270802-974f-4a98-b6a5-5c990dc80048</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>0194e17c-8344-400a-aabc-4b43ace80030</parentFolderId>
+      <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+      <packageName>InsureIt.Services</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="2a1a8dbd-f0b5-4770-9266-9ddfc5e66013" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="9bd81e4b-e9f7-48b3-95ea-a69057897c91">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>d6d2f5bf-738d-4f4a-813a-690bea5dea24</parentFolderId>
+          <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+          <packageName>InsureIt.Services</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="1b76f706-bd39-4872-b4e9-95fc58339b0e" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>FindCustomers</name>
+      <display>FindCustomers(): CustomerDto[*]</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="bade624e-b856-4d77-927b-4557b4029876">
+        <typeId>7d698419-dd66-46bb-96ea-e1e6ec69a7e6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>InsureIt.Services</typePackageName>
+        <typePackageId>79270802-974f-4a98-b6a5-5c990dc80048</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>0194e17c-8344-400a-aabc-4b43ace80030</parentFolderId>
+      <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+      <packageName>InsureIt.Services</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="b9f8661c-dbd3-4e29-b4e6-b2770429c771" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>UpdateCustomer</name>
+      <display>UpdateCustomer(id: guid, dto: CustomerUpdateDto): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="d9a43c24-5540-468c-9547-a72186eda196">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>0194e17c-8344-400a-aabc-4b43ace80030</parentFolderId>
+      <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+      <packageName>InsureIt.Services</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="0ed6bff3-7aec-423b-9bcb-b6ee6dbb2cde" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="b49ef0b4-26ef-4331-8618-3fb3d300eba5">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>b9f8661c-dbd3-4e29-b4e6-b2770429c771</parentFolderId>
+          <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+          <packageName>InsureIt.Services</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="de742fc0-d9e9-4078-bb3d-455bb5912795" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>dto</name>
+          <display>in : dto: CustomerUpdateDto</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="41ce8e0f-b48d-439d-98c3-ca1db0af0763">
+            <typeId>54e7f198-fbbe-42cb-be54-9aeb82087b24</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>InsureIt.Services</typePackageName>
+            <typePackageId>79270802-974f-4a98-b6a5-5c990dc80048</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>b9f8661c-dbd3-4e29-b4e6-b2770429c771</parentFolderId>
+          <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+          <packageName>InsureIt.Services</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="f3ee661b-0bd4-4dd5-ad28-4fdd6afdea6f" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>DeleteCustomer</name>
+      <display>DeleteCustomer(id: guid): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="75cbd99c-0009-4887-8b41-03d6b8ad6f91">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>0194e17c-8344-400a-aabc-4b43ace80030</parentFolderId>
+      <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+      <packageName>InsureIt.Services</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="29ae551c-f06e-4892-8448-ff9514ea6011" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="efed335a-49f8-4311-b171-5db1ed1e8f91">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>f3ee661b-0bd4-4dd5-ad28-4fdd6afdea6f</parentFolderId>
+          <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+          <packageName>InsureIt.Services</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="42c5b5bb-5822-41b2-88a8-d7a013429394" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetQuote</name>
+      <display>GetQuote(person: object): int</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="1e39e31b-35f3-4324-b288-58577e5811db">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>0194e17c-8344-400a-aabc-4b43ace80030</parentFolderId>
+      <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+      <packageName>InsureIt.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="/get-quote" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="application/json" isActive="true" />
+            <property name="e3870725-34b3-4684-85f2-ec4a667207fb" display="Success Response Code" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="a81b32b2-909a-4c9f-8235-335c0445a798" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>person</name>
+          <display>in : person: object</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="94be421c-a7a7-4191-b167-8f2381bde23f">
+            <typeId>341DD965-D06C-4A40-9437-9516ADA77FF5</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>42c5b5bb-5822-41b2-88a8-d7a013429394</parentFolderId>
+          <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+          <packageName>InsureIt.Services</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

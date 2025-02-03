@@ -9,7 +9,7 @@ namespace VehiCover.Application.Quotes
     {
         public QuoteCreateDto()
         {
-            PersonId = null!;
+            PersonId = Guid.NewGuid();
             Age = 0;
             Name = null!;
             Surname = null!;
@@ -18,7 +18,7 @@ namespace VehiCover.Application.Quotes
             VehicleType = null!;
         }
 
-        public string PersonId { get; set; }
+        public Guid PersonId { get; set; }
         public int Age { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
@@ -27,7 +27,7 @@ namespace VehiCover.Application.Quotes
         public string VehicleType { get; set; }
 
 
-        public static QuoteCreateDto Create(string personId, int age, string name, string surname, string contactNumber, string vehicleRegistration, string vehicleType)
+        public static QuoteCreateDto Create(Guid personId, int age, string name, string surname, string contactNumber, string vehicleRegistration, string vehicleType)
         {
             return new QuoteCreateDto
             {

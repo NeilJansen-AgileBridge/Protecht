@@ -9,7 +9,7 @@ namespace VehiCover.Domain.Entities
     {
         public Quote()
         {
-            ClientId = null!;
+            ClientId = Guid.NewGuid();
             Date = null!;
         }
 
@@ -17,7 +17,7 @@ namespace VehiCover.Domain.Entities
 
         public double Amount { get; set; }
 
-        public string ClientId { get; set; }
+        public Guid ClientId { get; set; }
 
         public string Date { get; set; }
 

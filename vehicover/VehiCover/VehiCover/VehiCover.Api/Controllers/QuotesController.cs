@@ -44,7 +44,7 @@ namespace VehiCover.Api.Controllers
             CancellationToken cancellationToken = default)
         {
             await _validationService.Handle(dto, cancellationToken);
-            var result = Guid.Empty;
+            var result = 0.00;
 
             using (var transaction = new TransactionScope(TransactionScopeOption.Required,
                 new TransactionOptions { IsolationLevel = IsolationLevel.ReadCommitted }, TransactionScopeAsyncFlowOption.Enabled))
@@ -53,7 +53,7 @@ namespace VehiCover.Api.Controllers
                 await _unitOfWork.SaveChangesAsync(cancellationToken);
                 transaction.Complete();
             }
-            return CreatedAtAction(nameof(FindQuoteById), new { id = result }, new JsonResponse<Guid>(result));
+            return CreatedAtAction(nameof(FindQuoteById), new { id = result }, new JsonResponse<double>(result));
         }
 
         /// <summary>

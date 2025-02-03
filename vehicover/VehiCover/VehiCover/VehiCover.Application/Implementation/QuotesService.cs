@@ -25,18 +25,20 @@ namespace VehiCover.Application.Implementation
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
-        public async Task<Guid> CreateQuote(QuoteCreateDto dto, CancellationToken cancellationToken = default)
+        public async Task<double> CreateQuote(QuoteCreateDto dto, CancellationToken cancellationToken = default)
         {
+            double calculated_amount = 2000.00;
+
             var quote = new Quote
             {
-                Amount = dto.Amount,
+                Amount = calculated_amount,
                 ClientId = dto.ClientId,
                 Date = dto.Date
             };
 
             _quoteRepository.Add(quote);
             await _quoteRepository.UnitOfWork.SaveChangesAsync(cancellationToken);
-            return quote.Id;
+            return quote.Amount;
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]

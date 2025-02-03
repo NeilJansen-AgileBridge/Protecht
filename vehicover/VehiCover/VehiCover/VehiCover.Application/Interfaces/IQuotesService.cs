@@ -8,7 +8,7 @@ namespace VehiCover.Application.Interfaces
 {
     public interface IQuotesService
     {
-        Task<Guid> CreateQuote(QuoteCreateDto dto, CancellationToken cancellationToken = default);
+        Task<double> CreateQuote(QuoteCreateDto dto, CancellationToken cancellationToken = default);
         Task<QuoteDto> FindQuoteById(Guid id, CancellationToken cancellationToken = default);
         Task<List<QuoteDto>> FindQuotes(CancellationToken cancellationToken = default);
         Task UpdateQuote(Guid id, QuoteUpdateDto dto, CancellationToken cancellationToken = default);

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="e63d126d-c33b-492d-97f6-1738a1e841ac">
+  <sourceEnd id="9dda04c7-d5ac-4905-9227-d27222b516b7" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: FindQuoteById</display>
+    <order>0</order>
+    <typeReference id="35c04832-decf-4d5b-9e79-2c8226532579">
+      <typeId>ba3131cb-afb6-4f65-89b9-5d87ddfd5863</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>VehiCover.Services</typePackageName>
+      <typePackageId>c4b3ea4b-6086-4f0e-a110-afbb8de26d1c</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="e63d126d-c33b-492d-97f6-1738a1e841ac" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>quote</name>
+    <display>[query] quote: Quote</display>
+    <order>1</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="5d0272bc-3783-4abb-affb-bb44076d7a7b">
+      <typeId>ff2e6259-7e7d-47ca-b5a4-b834b80cfe9d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>VehiCover.Domain</typePackageName>
+      <typePackageId>5f7715e1-4e15-4559-80d8-f4ed50c558b0</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="cbfeaa04-dd55-44fa-add3-f3124b2b93b6" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="ba3131cb-afb6-4f65-89b9-5d87ddfd5863" location="[VehiCover].[Services].[FindQuoteById]" />
+        <target applicationId="cbfeaa04-dd55-44fa-add3-f3124b2b93b6" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="ff2e6259-7e7d-47ca-b5a4-b834b80cfe9d" location="[VehiCover].[Services].[Quote]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{id}</expression>
+            <path>
+              <target id="ff2e6259-7e7d-47ca-b5a4-b834b80cfe9d" name="Quote" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="4c19c220-8a3e-4ec5-bc27-ef399ac9f799" name="Id" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="ba3131cb-afb6-4f65-89b9-5d87ddfd5863" name="FindQuoteById" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="4cdc98e5-ff06-4387-9b2d-1514cecfd78f" name="id" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

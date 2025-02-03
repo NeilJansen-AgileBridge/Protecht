@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="d5420654-b8a9-4502-ad5b-0a16353bd420" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>Repositories</name>
+  <display>Repositories</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>0c6c55f3-bdbb-447e-b968-b591fcb4de50</parentFolderId>
+  <packageId>d1603c57-8179-4cce-863b-6390068cec0d</packageId>
+  <packageName>InsureIt</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="d07eba98-531b-479f-932b-911fbd2357ab" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.EntityFrameworkCore.Repositories.CustomRepository</name>
+      <display>Intent.EntityFrameworkCore.Repositories.CustomRepository</display>
+      <externalReference>Intent.EntityFrameworkCore.Repositories</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>d5420654-b8a9-4502-ad5b-0a16353bd420</parentFolderId>
+      <packageId>d1603c57-8179-4cce-863b-6390068cec0d</packageId>
+      <packageName>InsureIt</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="e3c0d279-2268-4d90-b3a9-c7628da63d5f" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.EntityFrameworkCore.Repositories.Repository</name>
+      <display>Intent.EntityFrameworkCore.Repositories.Repository</display>
+      <externalReference>Intent.EntityFrameworkCore.Repositories</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>d5420654-b8a9-4502-ad5b-0a16353bd420</parentFolderId>
+      <packageId>d1603c57-8179-4cce-863b-6390068cec0d</packageId>
+      <packageName>InsureIt</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="5acf8f29-d6ba-49a3-b153-4f2fda71cbf1" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.EntityFrameworkCore.Repositories.RepositoryBase</name>
+      <display>Intent.EntityFrameworkCore.Repositories.RepositoryBase</display>
+      <externalReference>Intent.EntityFrameworkCore.Repositories</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>d5420654-b8a9-4502-ad5b-0a16353bd420</parentFolderId>
+      <packageId>d1603c57-8179-4cce-863b-6390068cec0d</packageId>
+      <packageName>InsureIt</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

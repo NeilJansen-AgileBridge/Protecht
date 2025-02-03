@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="91ab64a8-6203-4f8d-8904-a234cab84241">
+  <sourceEnd id="e9baea2a-718a-40c1-8442-29cec3ccb00c" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <display>updated by : CustomersService.UpdateCustomer</display>
+    <order>0</order>
+    <typeReference id="67efdc99-e79e-4120-8dcb-6c94b4d3dd53">
+      <typeId>b9f8661c-dbd3-4e29-b4e6-b2770429c771</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>InsureIt.Services</typePackageName>
+      <typePackageId>79270802-974f-4a98-b6a5-5c990dc80048</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="91ab64a8-6203-4f8d-8904-a234cab84241" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>customer</name>
+    <display>[update] customer: Customer</display>
+    <order>2</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="d8acf30c-f96e-4416-9d94-79d984fed25b">
+      <typeId>fadc9412-651b-457e-90aa-60c44beacf89</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>InsureIt.Domain</typePackageName>
+      <typePackageId>014ffd78-6e51-4154-9459-895e275dd39c</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="45cf8044-19ee-4e5b-bfd4-edb97379d98e" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="b9f8661c-dbd3-4e29-b4e6-b2770429c771" location="[InsureIt].[Services].[UpdateCustomer]" />
+        <target applicationId="45cf8044-19ee-4e5b-bfd4-edb97379d98e" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="fadc9412-651b-457e-90aa-60c44beacf89" location="[InsureIt].[Services].[Customer]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{id}</expression>
+            <path>
+              <target id="fadc9412-651b-457e-90aa-60c44beacf89" name="Customer" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="1b09bb8e-fb83-4814-84de-00677d7e9589" name="Id" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="b9f8661c-dbd3-4e29-b4e6-b2770429c771" name="UpdateCustomer" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="0ed6bff3-7aec-423b-9bcb-b6ee6dbb2cde" name="id" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="45cf8044-19ee-4e5b-bfd4-edb97379d98e" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="b9f8661c-dbd3-4e29-b4e6-b2770429c771" location="[InsureIt].[Services].[UpdateCustomer]" />
+        <target applicationId="45cf8044-19ee-4e5b-bfd4-edb97379d98e" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="fadc9412-651b-457e-90aa-60c44beacf89" location="[InsureIt].[Services].[Customer]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{dto.Name}</expression>
+            <path>
+              <target id="fadc9412-651b-457e-90aa-60c44beacf89" name="Customer" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="65766d13-6030-4634-8521-1f2ebeaea556" name="Name" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.Name" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="b9f8661c-dbd3-4e29-b4e6-b2770429c771" name="UpdateCustomer" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="de742fc0-d9e9-4078-bb3d-455bb5912795" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="a18ba3a2-1089-4602-9950-a75da0a9b0a7" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.Age}</expression>
+            <path>
+              <target id="fadc9412-651b-457e-90aa-60c44beacf89" name="Customer" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="b49d01bd-44ca-418f-ade3-1b574e46584b" name="Age" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.Age" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="b9f8661c-dbd3-4e29-b4e6-b2770429c771" name="UpdateCustomer" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="de742fc0-d9e9-4078-bb3d-455bb5912795" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="5f54de8e-32e7-4998-952a-796a8793c755" name="Age" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.PhoneNumber}</expression>
+            <path>
+              <target id="fadc9412-651b-457e-90aa-60c44beacf89" name="Customer" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="bf94ec03-aa7c-4994-a409-3daf6b945ab9" name="PhoneNumber" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.PhoneNumber" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="b9f8661c-dbd3-4e29-b4e6-b2770429c771" name="UpdateCustomer" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="de742fc0-d9e9-4078-bb3d-455bb5912795" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="13fb29d2-118c-4a5b-9e5f-101fdb88f24e" name="PhoneNumber" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

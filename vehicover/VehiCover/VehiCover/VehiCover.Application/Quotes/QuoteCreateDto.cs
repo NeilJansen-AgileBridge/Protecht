@@ -13,17 +13,19 @@ namespace VehiCover.Application.Quotes
             Date = null!;
         }
 
-        public double Amount { get; set; }
+        //public double Amount { get; set; }
         public string ClientId { get; set; }
         public string Date { get; set; }
+        public int Age { get; set; }
 
-        public static QuoteCreateDto Create(double amount, string clientId, string date)
+        public static QuoteCreateDto Create(string clientId, string date, int age)
         {
             return new QuoteCreateDto
             {
-                Amount = amount,
+                //Amount = amount,
                 ClientId = clientId,
-                Date = date
+                Date = date, 
+                Age = age
             };
         }
     }

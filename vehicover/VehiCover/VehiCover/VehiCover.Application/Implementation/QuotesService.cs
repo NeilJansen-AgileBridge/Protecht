@@ -27,7 +27,13 @@ namespace VehiCover.Application.Implementation
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
         public async Task<double> CreateQuote(QuoteCreateDto dto, CancellationToken cancellationToken = default)
         {
-            double calculated_amount = 2000.00;
+            Random rand = new Random();
+            int calculated_amount = rand.Next(1500, 3001);
+
+            if (dto.Age < 25)
+            {
+                calculated_amount += 500;
+            }
 
             var quote = new Quote
             {

@@ -1,3 +1,5 @@
+using System.Text.Json;
+using System.Web.Http;
 using AutoMapper;
 using InsureIt.Application.Customers;
 using InsureIt.Application.Interfaces;
@@ -83,23 +85,66 @@ namespace InsureIt.Application.Implementation
             _customerRepository.Remove(customer);
         }
 
-        public class person
-        {
-            string surname { get; set; }
-            string name { get; set; }
-            Guid id { get; set; }
-            string contactNumber { get; set; }
-            string vehicleReg { get; set; }
-            string vehicleType { get; set; }
-            int age { get; set; }
-        }
+       
 
 
-        public async Task<int> GetQuote(object person, CancellationToken cancellationToken = default)
+        public async Task<int> GetQuote([FromBody] MyPerson person, CancellationToken cancellationToken = default)
         {
-            Random amount = new Random();
-            int init = amount.Next(1000, 5000);
-            return await Task.FromResult(init);
+
+            //MyPerson customerObj = new MyPerson
+            //{
+            //    surname = customer.surname,
+            //    name = customer.name,
+            //    id = customer.id,
+            //    contactNumber = customer.contactNumber,
+            //    vehicleReg = customer.vehicleReg,
+            //    vehicleType = customer.vehicleType,
+            //    age = customer.age,
+            //};
+
+
+            try
+            {
+                if (FindCustomerById(person.id) != null)
+                {
+                    Random amount = new Random();
+                    int init = amount.Next(1000, 5000);
+                    return await Task.FromResult(init);
+                }
+                else
+                {
+
+                    var customerDto = new CustomerCreateDto
+                    {
+                        Name = person.name,  
+                        Age = person.age,  
+                        PhoneNumber = person.contactNumber 
+                    };
+
+                    await CreateCustomer(customerDto, cancellationToken);
+
+                    Random amount = new Random();
+                    int init = amount.Next(1000, 5000);
+                    return await Task.FromResult(init);
+                }
+
+            }
+            catch (Exception ex) {
+                Console.WriteLine($"Error: {ex.Message}");
+                return 0;
+            }
+
+            
         }
+    }
+    public class MyPerson
+    {
+        public string surname { get; set; }
+        public string name { get; set; }
+        public Guid id { get; set; }
+        public string contactNumber { get; set; }
+        public string vehicleReg { get; set; }
+        public string vehicleType { get; set; }
+        public int age { get; set; }
     }
 }

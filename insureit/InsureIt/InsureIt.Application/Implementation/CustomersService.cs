@@ -105,28 +105,31 @@ namespace InsureIt.Application.Implementation
 
             try
             {
-                if (FindCustomerById(person.id) != null)
-                {
-                    Random amount = new Random();
-                    int init = amount.Next(1000, 5000);
-                    return await Task.FromResult(init);
-                }
-                else
-                {
+                //if (FindCustomerById(person.id) != null)
+                //{
+                //    Random amount = new Random();
+                //    int init = amount.Next(1000, 5000);
+                //    return await Task.FromResult(init);
+                //}
+                //else
+                //{
 
-                    var customerDto = new CustomerCreateDto
-                    {
-                        Name = person.name,  
-                        Age = person.age,  
-                        PhoneNumber = person.contactNumber 
-                    };
+                //    var customerDto = new CustomerCreateDto
+                //    {
+                //        Name = person.name,  
+                //        Age = person.age,  
+                //        PhoneNumber = person.contactNumber 
+                //    };
 
-                    await CreateCustomer(customerDto, cancellationToken);
+                //    await CreateCustomer(customerDto, cancellationToken);
 
-                    Random amount = new Random();
-                    int init = amount.Next(1000, 5000);
-                    return await Task.FromResult(init);
-                }
+                //    Random amount = new Random();
+                //    int init = amount.Next(1000, 5000);
+                //    return await Task.FromResult(init);
+                //}
+                Random amount = new Random();
+                int init = amount.Next(1000, 5000);
+                return await Task.FromResult(init);
 
             }
             catch (Exception ex) {
@@ -139,12 +142,12 @@ namespace InsureIt.Application.Implementation
     }
     public class MyPerson
     {
-        public string surname { get; set; }
-        public string name { get; set; }
-        public Guid id { get; set; }
-        public string contactNumber { get; set; }
-        public string vehicleReg { get; set; }
-        public string vehicleType { get; set; }
-        public int age { get; set; }
+        public string? surname { get; set; }
+        public string? name { get; set; }
+        public Guid? id { get; set; }
+        public string? contactNumber { get; set; }
+        public string? vehicleReg { get; set; }
+        public string? vehicleType { get; set; }
+        public int? age { get; set; }
     }
 }

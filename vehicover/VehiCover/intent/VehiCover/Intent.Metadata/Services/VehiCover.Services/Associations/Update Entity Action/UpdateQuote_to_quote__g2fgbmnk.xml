@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="ce47b4cb-b832-4bcd-9697-0cfecbdc24aa">
+  <sourceEnd id="3c5f6e6d-f8ba-43e6-a076-64a5b04308be" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <display>updated by : QuotesService.UpdateQuote</display>
+    <order>0</order>
+    <typeReference id="bc600069-c1da-4364-baf1-bd946bbc7f7e">
+      <typeId>cc10bb3b-d08f-4cef-bc4f-c50171abf1fa</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>VehiCover.Services</typePackageName>
+      <typePackageId>c4b3ea4b-6086-4f0e-a110-afbb8de26d1c</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="ce47b4cb-b832-4bcd-9697-0cfecbdc24aa" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>quote</name>
+    <display>[update] quote: Quote</display>
+    <order>2</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="f4f80178-c8cc-4ac9-b500-3cb18524516a">
+      <typeId>ff2e6259-7e7d-47ca-b5a4-b834b80cfe9d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>VehiCover.Domain</typePackageName>
+      <typePackageId>5f7715e1-4e15-4559-80d8-f4ed50c558b0</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="cbfeaa04-dd55-44fa-add3-f3124b2b93b6" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="cc10bb3b-d08f-4cef-bc4f-c50171abf1fa" location="[VehiCover].[Services].[UpdateQuote]" />
+        <target applicationId="cbfeaa04-dd55-44fa-add3-f3124b2b93b6" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="ff2e6259-7e7d-47ca-b5a4-b834b80cfe9d" location="[VehiCover].[Services].[Quote]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{id}</expression>
+            <path>
+              <target id="ff2e6259-7e7d-47ca-b5a4-b834b80cfe9d" name="Quote" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="4c19c220-8a3e-4ec5-bc27-ef399ac9f799" name="Id" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="cc10bb3b-d08f-4cef-bc4f-c50171abf1fa" name="UpdateQuote" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="be189e2f-52f3-4a43-b1f4-987bc342687b" name="id" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="cbfeaa04-dd55-44fa-add3-f3124b2b93b6" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="cc10bb3b-d08f-4cef-bc4f-c50171abf1fa" location="[VehiCover].[Services].[UpdateQuote]" />
+        <target applicationId="cbfeaa04-dd55-44fa-add3-f3124b2b93b6" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="ff2e6259-7e7d-47ca-b5a4-b834b80cfe9d" location="[VehiCover].[Services].[Quote]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{dto.Amount}</expression>
+            <path>
+              <target id="ff2e6259-7e7d-47ca-b5a4-b834b80cfe9d" name="Quote" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="61e8f8bd-e05d-40b0-af30-592a8aaf9fcf" name="Amount" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.Amount" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="cc10bb3b-d08f-4cef-bc4f-c50171abf1fa" name="UpdateQuote" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="c9160b5b-76b5-4925-bf3f-6b138e4b3676" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="3e4b0ef5-c6f4-499c-9bd6-b01c7bc66e46" name="Amount" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.ClientId}</expression>
+            <path>
+              <target id="ff2e6259-7e7d-47ca-b5a4-b834b80cfe9d" name="Quote" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="a5120bec-dc4b-43ba-beff-02efe17b24f7" name="ClientId" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.ClientId" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="cc10bb3b-d08f-4cef-bc4f-c50171abf1fa" name="UpdateQuote" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="c9160b5b-76b5-4925-bf3f-6b138e4b3676" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="7a20a0a0-ac02-45a2-be4a-8317e169be6f" name="ClientId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.Date}</expression>
+            <path>
+              <target id="ff2e6259-7e7d-47ca-b5a4-b834b80cfe9d" name="Quote" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="149ae3ef-c226-4e5d-9464-410260f9933a" name="Date" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.Date" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="cc10bb3b-d08f-4cef-bc4f-c50171abf1fa" name="UpdateQuote" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="c9160b5b-76b5-4925-bf3f-6b138e4b3676" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="ade03cd2-5619-46c5-8d3d-7b2a644efcc8" name="Date" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

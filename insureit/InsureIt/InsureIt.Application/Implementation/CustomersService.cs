@@ -83,30 +83,23 @@ namespace InsureIt.Application.Implementation
             _customerRepository.Remove(customer);
         }
 
-        [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
+        public class person
+        {
+            string surname { get; set; }
+            string name { get; set; }
+            Guid id { get; set; }
+            string contactNumber { get; set; }
+            string vehicleReg { get; set; }
+            string vehicleType { get; set; }
+            int age { get; set; }
+        }
+
+
         public async Task<int> GetQuote(object person, CancellationToken cancellationToken = default)
         {
-            /*
-             {
-                id: string
-                contactDetails: string
-                vehicleReg: string
-                vehicleType: string
-              }
-             */
-
-            //check if Person exists
-
-
-            //If not create the person
-
-            //GenerateQuote ...this is internal//do later
-
-
-
             Random amount = new Random();
             int init = amount.Next(1000, 5000);
-            return init;
+            return await Task.FromResult(init);
         }
     }
 }

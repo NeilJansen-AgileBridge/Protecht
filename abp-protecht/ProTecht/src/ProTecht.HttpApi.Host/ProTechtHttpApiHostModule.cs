@@ -43,6 +43,8 @@ using Volo.Abp.Security.Claims;
 using Volo.Abp.Account.Public.Web.ExternalProviders;
 using Volo.Abp.Account.Public.Web;
 using Volo.Abp.Account.Public.Web.Impersonation;
+using Refit;
+using ProTecht.Clients;
 
 namespace ProTecht;
 
@@ -114,6 +116,14 @@ public class ProTechtHttpApiHostModule : AbpModule
                 options.ForwardedHeaders = ForwardedHeaders.XForwardedProto;
             });
         }
+
+        // SET BASE URL
+        context.Services
+            .AddRefitClient<IVehiCoverAPI>()
+            .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://localhost:44338/api/Quotes"));
+        context.Services
+            .AddRefitClient<IInsureITAPI>()
+            .ConfigureHttpClient(c => c.BaseAddress = new Uri(""));
 
         ConfigureAuthentication(context);
         ConfigureUrls(configuration);

@@ -9,16 +9,16 @@ namespace VehiCover.Application.Quotes
     {
         public QuoteUpdateDto()
         {
-            ClientId = null!;
+            ClientId = Guid.NewGuid();
             Date = null!;
         }
 
         public Guid Id { get; set; }
         public double Amount { get; set; }
-        public string ClientId { get; set; }
+        public Guid ClientId { get; set; }
         public string Date { get; set; }
 
-        public static QuoteUpdateDto Create(Guid id, double amount, string clientId, string date)
+        public static QuoteUpdateDto Create(Guid id, double amount, Guid clientId, string date)
         {
             return new QuoteUpdateDto
             {

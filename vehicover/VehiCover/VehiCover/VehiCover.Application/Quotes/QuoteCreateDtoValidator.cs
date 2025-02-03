@@ -17,11 +17,11 @@ namespace VehiCover.Application.Quotes
 
         private void ConfigureValidationRules()
         {
-            RuleFor(v => v.ClientId)
+            RuleFor(v => v.PersonId)
                 .NotNull();
 
-            RuleFor(v => v.Date)
-                .NotNull();
+            //RuleFor(v => v.Date)
+            //    .NotNull();
         }
     }
 }

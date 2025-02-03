@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="f74e64fb-4a46-46a8-b4c5-64028562dfee" type="Enum" typeId="85fba0e9-9161-4c85-a603-a229ef312beb">
+  <name>VehicleType</name>
+  <display>VehicleType</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>014ffd78-6e51-4154-9459-895e275dd39c</parentFolderId>
+  <packageId>014ffd78-6e51-4154-9459-895e275dd39c</packageId>
+  <packageName>InsureIt.Domain</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="fc7113f8-760a-43aa-b92b-2333dff52e62" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Hatchback</name>
+      <display>Hatchback</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>f74e64fb-4a46-46a8-b4c5-64028562dfee</parentFolderId>
+      <packageId>014ffd78-6e51-4154-9459-895e275dd39c</packageId>
+      <packageName>InsureIt.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="88fc1464-207d-456f-94e0-74c299268d3f" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Bakkie</name>
+      <display>Bakkie</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>f74e64fb-4a46-46a8-b4c5-64028562dfee</parentFolderId>
+      <packageId>014ffd78-6e51-4154-9459-895e275dd39c</packageId>
+      <packageName>InsureIt.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="b822f65e-e724-44a9-8de0-15dc0c9813ea" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Sedan</name>
+      <display>Sedan</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>f74e64fb-4a46-46a8-b4c5-64028562dfee</parentFolderId>
+      <packageId>014ffd78-6e51-4154-9459-895e275dd39c</packageId>
+      <packageName>InsureIt.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="c527e338-a8a0-47e0-b25a-f198a2db3e21" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Suv</name>
+      <display>Suv</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>f74e64fb-4a46-46a8-b4c5-64028562dfee</parentFolderId>
+      <packageId>014ffd78-6e51-4154-9459-895e275dd39c</packageId>
+      <packageName>InsureIt.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="236d5f33-64ca-4c50-8540-15145de93153" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Convertible</name>
+      <display>Convertible</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>f74e64fb-4a46-46a8-b4c5-64028562dfee</parentFolderId>
+      <packageId>014ffd78-6e51-4154-9459-895e275dd39c</packageId>
+      <packageName>InsureIt.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="aae60441-5c1f-4712-9c4a-d6f2108e079e" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Coupe</name>
+      <display>Coupe</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>f74e64fb-4a46-46a8-b4c5-64028562dfee</parentFolderId>
+      <packageId>014ffd78-6e51-4154-9459-895e275dd39c</packageId>
+      <packageName>InsureIt.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="f1a55f75-72a5-4e86-bbea-49874a009658" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Minibus</name>
+      <display>Minibus</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>f74e64fb-4a46-46a8-b4c5-64028562dfee</parentFolderId>
+      <packageId>014ffd78-6e51-4154-9459-895e275dd39c</packageId>
+      <packageName>InsureIt.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="c6359857-9722-4b96-96ab-a79f78a2c1ac" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Stationwagon</name>
+      <display>Stationwagon</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>f74e64fb-4a46-46a8-b4c5-64028562dfee</parentFolderId>
+      <packageId>014ffd78-6e51-4154-9459-895e275dd39c</packageId>
+      <packageName>InsureIt.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

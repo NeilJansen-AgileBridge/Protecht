@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="54eaffc3-e829-4750-8caa-1eea262d6a3a" type="Service" typeId="b16578a5-27b1-4047-a8df-f0b783d706bd">
+  <name>QuotesService</name>
+  <display>QuotesService</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>79270802-974f-4a98-b6a5-5c990dc80048</parentFolderId>
+  <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+  <packageName>InsureIt.Services</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="ab4f247b-8e56-46d0-bf0d-b0a02760ad14" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>CreateQuote</name>
+      <display>CreateQuote(dto: QuoteCreateDto): guid</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="1311a0b9-6048-4b2e-9a76-893c7dbc9ca6">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>54eaffc3-e829-4750-8caa-1eea262d6a3a</parentFolderId>
+      <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+      <packageName>InsureIt.Services</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="24b214dd-da95-4468-9a0b-99793dc8fa83" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>dto</name>
+          <display>in : dto: QuoteCreateDto</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="1a5df9ce-5de3-4970-b46a-23c00b4dc211">
+            <typeId>b763b27e-6d54-4772-ad6e-ea1e075b4e6f</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>InsureIt.Services</typePackageName>
+            <typePackageId>79270802-974f-4a98-b6a5-5c990dc80048</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>ab4f247b-8e56-46d0-bf0d-b0a02760ad14</parentFolderId>
+          <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+          <packageName>InsureIt.Services</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="ada79a81-27e7-4a5a-9ec4-4dc4e2ada4c0" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>FindQuoteById</name>
+      <display>FindQuoteById(id: guid): QuoteDto</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="884b3831-9cd1-4200-bdf8-ad597609e583">
+        <typeId>7dd8c5c9-5a85-4c9f-9816-f313bbc5e086</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>InsureIt.Services</typePackageName>
+        <typePackageId>79270802-974f-4a98-b6a5-5c990dc80048</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>54eaffc3-e829-4750-8caa-1eea262d6a3a</parentFolderId>
+      <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+      <packageName>InsureIt.Services</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="cf9fee22-89c9-4e2f-81e5-b9bb1c6b48c6" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="e8089bcc-ed33-49fd-9b9b-a08f77bc060e">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>ada79a81-27e7-4a5a-9ec4-4dc4e2ada4c0</parentFolderId>
+          <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+          <packageName>InsureIt.Services</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="51e6aae5-94f9-47ad-ad73-3edbea97e2f3" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>FindQuotes</name>
+      <display>FindQuotes(): QuoteDto[*]</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="9b28e9c5-c479-46c6-8950-22e7497e33d3">
+        <typeId>7dd8c5c9-5a85-4c9f-9816-f313bbc5e086</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>InsureIt.Services</typePackageName>
+        <typePackageId>79270802-974f-4a98-b6a5-5c990dc80048</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>54eaffc3-e829-4750-8caa-1eea262d6a3a</parentFolderId>
+      <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+      <packageName>InsureIt.Services</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="dc4e6cee-a227-4e33-9b41-1f81f715cd67" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>UpdateQuote</name>
+      <display>UpdateQuote(id: guid, dto: QuoteUpdateDto): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="0ca499c8-fa52-48e2-905c-2b43a0f25737">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>54eaffc3-e829-4750-8caa-1eea262d6a3a</parentFolderId>
+      <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+      <packageName>InsureIt.Services</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="ca3e6882-3da9-430f-8912-6b32040952e4" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="b80d9731-e331-4f34-b7e4-8158d6c65616">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>dc4e6cee-a227-4e33-9b41-1f81f715cd67</parentFolderId>
+          <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+          <packageName>InsureIt.Services</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="1c2462eb-8ef4-4181-b24c-177b66c37745" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>dto</name>
+          <display>in : dto: QuoteUpdateDto</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="915887ae-ec96-4ec4-b101-fdf70252f4e9">
+            <typeId>0edab8c4-110c-4ba3-b678-da6054b0684e</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>InsureIt.Services</typePackageName>
+            <typePackageId>79270802-974f-4a98-b6a5-5c990dc80048</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>dc4e6cee-a227-4e33-9b41-1f81f715cd67</parentFolderId>
+          <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+          <packageName>InsureIt.Services</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="843754e6-0508-4f57-88c4-cd8b5d603819" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>DeleteQuote</name>
+      <display>DeleteQuote(id: guid): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="614f1806-b009-4563-a1e0-7cba51c5c5ac">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>54eaffc3-e829-4750-8caa-1eea262d6a3a</parentFolderId>
+      <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+      <packageName>InsureIt.Services</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="b24a6398-a8f0-41e6-ba0d-7ce7833ae0a1" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="87dd75ca-f252-49fb-93e3-26922155859a">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>843754e6-0508-4f57-88c4-cd8b5d603819</parentFolderId>
+          <packageId>79270802-974f-4a98-b6a5-5c990dc80048</packageId>
+          <packageName>InsureIt.Services</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

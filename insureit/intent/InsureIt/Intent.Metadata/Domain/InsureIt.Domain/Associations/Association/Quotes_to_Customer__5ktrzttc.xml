@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="7621ab50-e5ff-4309-8030-f2a2e4e421cd">
+  <sourceEnd id="269daf4a-dbb8-4c24-b72b-4363fe3b81fb" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Quotes</name>
+    <display>Quotes: Quote[*]</display>
+    <order>0</order>
+    <typeReference id="f6a4ee26-9a9b-4351-a3ed-1e0969826e96">
+      <typeId>ae7d3b1c-a42a-48a4-bb9d-d12360d90d21</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>InsureIt.Domain</typePackageName>
+      <typePackageId>014ffd78-6e51-4154-9459-895e275dd39c</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="7621ab50-e5ff-4309-8030-f2a2e4e421cd" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Customer</name>
+    <display>Customer: Customer</display>
+    <order>6</order>
+    <typeReference id="74ac7696-a7bb-4c81-8c18-be5b81cb55e1">
+      <typeId>fadc9412-651b-457e-90aa-60c44beacf89</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>InsureIt.Domain</typePackageName>
+      <typePackageId>014ffd78-6e51-4154-9459-895e275dd39c</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

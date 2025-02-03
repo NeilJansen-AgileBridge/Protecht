@@ -7,6 +7,7 @@ using InsureIt.Domain.Common.Interfaces;
 using Intent.RoslynWeaver.Attributes;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using InsureIt.Application.Implementation;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: DefaultIntentManaged(Mode.Fully, Targets = Targets.Usings)]
@@ -37,7 +38,7 @@ namespace InsureIt.Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<JsonResponse<int>>> GetQuote(
-            object person,
+            MyPerson person,
             CancellationToken cancellationToken = default)
         {
             var result = default(int);

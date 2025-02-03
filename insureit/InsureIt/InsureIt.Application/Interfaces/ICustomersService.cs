@@ -1,5 +1,6 @@
 using InsureIt.Application.Customers;
 using Intent.RoslynWeaver.Attributes;
+using InsureIt.Application.Implementation;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Application.Contracts.ServiceContract", Version = "1.0")]
@@ -13,6 +14,6 @@ namespace InsureIt.Application.Interfaces
         Task<List<CustomerDto>> FindCustomers(CancellationToken cancellationToken = default);
         Task UpdateCustomer(Guid id, CustomerUpdateDto dto, CancellationToken cancellationToken = default);
         Task DeleteCustomer(Guid id, CancellationToken cancellationToken = default);
-        Task<int> GetQuote(object person, CancellationToken cancellationToken = default);
+        Task<int> GetQuote(MyPerson person, CancellationToken cancellationToken = default);
     }
 }

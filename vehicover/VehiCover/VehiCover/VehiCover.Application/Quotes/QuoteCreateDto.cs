@@ -9,23 +9,36 @@ namespace VehiCover.Application.Quotes
     {
         public QuoteCreateDto()
         {
-            ClientId = null!;
-            Date = null!;
+            PersonId = null!;
+            Age = 0;
+            Name = null!;
+            Surname = null!;
+            ContactNumber = null!;
+            VehicleRegistration = null!;
+            VehicleType = null!;
         }
 
-        //public double Amount { get; set; }
-        public string ClientId { get; set; }
-        public string Date { get; set; }
+        public string PersonId { get; set; }
         public int Age { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string ContactNumber { get; set; }
+        public string VehicleRegistration { get; set; }
+        public string VehicleType { get; set; }
 
-        public static QuoteCreateDto Create(string clientId, string date, int age)
+
+        public static QuoteCreateDto Create(string personId, int age, string name, string surname, string contactNumber, string vehicleRegistration, string vehicleType)
         {
             return new QuoteCreateDto
             {
                 //Amount = amount,
-                ClientId = clientId,
-                Date = date, 
-                Age = age
+                PersonId = personId,
+                Age = age, 
+                Name = name,
+                Surname = surname,
+                ContactNumber = contactNumber,
+                VehicleRegistration = vehicleRegistration,
+                VehicleType = vehicleType
             };
         }
     }

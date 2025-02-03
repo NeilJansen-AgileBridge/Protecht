@@ -38,8 +38,8 @@ namespace VehiCover.Application.Implementation
             var quote = new Quote
             {
                 Amount = calculated_amount,
-                ClientId = dto.ClientId,
-                Date = dto.Date
+                ClientId = dto.PersonId,
+                Date = DateTime.Now.ToShortDateString()
             };
 
             _quoteRepository.Add(quote);

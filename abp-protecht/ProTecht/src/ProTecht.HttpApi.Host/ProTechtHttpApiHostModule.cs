@@ -123,7 +123,7 @@ public class ProTechtHttpApiHostModule : AbpModule
             .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://localhost:44338/api/Quotes"));
         context.Services
             .AddRefitClient<IInsureITAPI>()
-            .ConfigureHttpClient(c => c.BaseAddress = new Uri(""));
+            .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://localhost:44346/get-quote"));
 
         ConfigureAuthentication(context);
         ConfigureUrls(configuration);

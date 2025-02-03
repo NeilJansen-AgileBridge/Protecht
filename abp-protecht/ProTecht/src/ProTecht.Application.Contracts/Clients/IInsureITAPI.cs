@@ -11,6 +11,6 @@ namespace ProTecht.Clients
     public interface IInsureITAPI
     {
         [Post("")]
-        Task<int> GetQuoteAsync(QuoteRequestDto body);
+        Task<int> GetQuoteAsync();
     }
 }

@@ -1,0 +1,113 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXTheme": {
+      "version": "4.0.5",
+      "isInstalled": true
+    },
+    "Volo.Abp.TextTemplateManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.LanguageManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict.Pro": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.Gdpr": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.AuditLogging.Pro": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity.Pro": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account.Pro": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "ProTecht.Application": {
+      "path": "src/ProTecht.Application/ProTecht.Application.abppkg",
+      "folder": "src"
+    },
+    "ProTecht.Application.Tests": {
+      "path": "test/ProTecht.Application.Tests/ProTecht.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "ProTecht.Domain.Shared": {
+      "path": "src/ProTecht.Domain.Shared/ProTecht.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "ProTecht.Application.Contracts": {
+      "path": "src/ProTecht.Application.Contracts/ProTecht.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "ProTecht.HttpApi": {
+      "path": "src/ProTecht.HttpApi/ProTecht.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "ProTecht.HttpApi.Client": {
+      "path": "src/ProTecht.HttpApi.Client/ProTecht.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "ProTecht.EntityFrameworkCore.Tests": {
+      "path": "test/ProTecht.EntityFrameworkCore.Tests/ProTecht.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "ProTecht.EntityFrameworkCore": {
+      "path": "src/ProTecht.EntityFrameworkCore/ProTecht.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "ProTecht.TestBase": {
+      "path": "test/ProTecht.TestBase/ProTecht.TestBase.abppkg",
+      "folder": "test"
+    },
+    "ProTecht.Domain.Tests": {
+      "path": "test/ProTecht.Domain.Tests/ProTecht.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "ProTecht.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/ProTecht.HttpApi.Client.ConsoleTestApp/ProTecht.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "ProTecht.DbMigrator": {
+      "path": "src/ProTecht.DbMigrator/ProTecht.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "ProTecht.HttpApi.Host": {
+      "path": "src/ProTecht.HttpApi.Host/ProTecht.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "ProTecht.Domain": {
+      "path": "src/ProTecht.Domain/ProTecht.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

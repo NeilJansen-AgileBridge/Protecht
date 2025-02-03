@@ -1,0 +1,25 @@
+{
+  "production": true,
+  "application": {
+    "baseUrl":"http://localhost:4200",
+    "name": "ProTecht",
+    "logoUrl": ""
+  },
+  "oAuthConfig": {
+    "issuer": "https://localhost:44332/",
+    "redirectUri": "http://localhost:4200",
+    "clientId": "ProTecht_App",
+    "responseType": "code",
+    "scope": "offline_access openid profile email phone ProTecht"
+  },
+  "apis": {
+    "default": {
+      "url": "https://localhost:44332",
+      "rootNamespace": "ProTecht"
+    },
+    "AbpAccountPublic": {
+      "url": "https://localhost:44332",
+      "rootNamespace": "AbpAccountPublic"
+    }
+  }
+}
